@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1 class="logo">devfinder</h1>
+      <div class="theme-selector">Dark</div>
+      <form action="" class="form">
+        <input type="text" name="text" id="text-field" placeholder="Search GitHub username...">
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="result">
+        <div class="result__header">
+          <img src="" alt="" class="result__avatar">
+          <div class="result__user-name">User name</div>
+          <div class="result__user-username">Username</div>
+          <div class="result__user-join-date">date</div>
+        </div>
+        <div class="bio">Github user bio</div>
+        <div class="user-stats">
+          <div class="user-stats__box">
+            <h2 class="stats__title">Repos</h2>
+            <div class="number repos">10</div>
+          </div>
+          <div class="user-stats__box">
+            <h2 class="stats__title">Followers</h2>
+            <div class="number followers">10</div>
+          </div>
+          <div class="user-stats__box">
+            <h2 class="stats__title">Following</h2>
+            <div class="number following">10</div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="city">Random City</div>
+          <div class="website">www.website.com</div>
+          <div class="twitter">@twitter</div>
+          <div class="company">Random City</div>
+        </div>
+      </div>
+    </header>
+    
+  </main> 
+<script>
+  const gitHubUrl = 'https://api.github.com/users/'
+  const inputEl = document.querySelector('#text-field')
+  const name = document.querySelector('.result__user-name')
+  const username = document.querySelector('.result__user-username')
+  const avatar = document.querySelector('.result__avatar')
+  const userBio = document.querySelector('.bio')
+  const searchBtn = document.querySelector('.btn')
+  const repos = document.querySelector('.repos')
+  const followers = document.querySelector('.followers')
+  const following = document.querySelector('.following')
+
+  searchBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const username = inputEl.value
+    fetch(`${gitHubUrl}${username}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    name.textContent = data['name'];
+    username.textContent = data['login'];
+    avatar.src = data['avatar_url'];
+    userBio.textContent = data['bio'];
+    repos.textContent = data['public_repos'];
+    followers.textContent = data['followers'];
+    following.textContent = data['following'];
+    });
+  })
+
+  
+</script>
+</body>
+</html>
