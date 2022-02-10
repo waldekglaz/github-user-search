@@ -50,16 +50,20 @@
     
   </main> 
 <script>
-  const gitHubUrl = 'https://api.github.com/users/'
-  const inputEl = document.querySelector('#text-field')
-  const name = document.querySelector('.result__user-name')
-  const username = document.querySelector('.result__user-username')
-  const avatar = document.querySelector('.result__avatar')
-  const userBio = document.querySelector('.bio')
-  const searchBtn = document.querySelector('.btn')
-  const repos = document.querySelector('.repos')
-  const followers = document.querySelector('.followers')
-  const following = document.querySelector('.following')
+  const gitHubUrl = 'https://api.github.com/users/';
+  const inputEl = document.querySelector('#text-field');
+  const name = document.querySelector('.result__user-name');
+  const username = document.querySelector('.result__user-username');
+  const avatar = document.querySelector('.result__avatar');
+  const userBio = document.querySelector('.bio');
+  const searchBtn = document.querySelector('.btn');
+  const repos = document.querySelector('.repos');
+  const followers = document.querySelector('.followers');
+  const following = document.querySelector('.following');
+  const city = document.querySelector('.city');
+  const email = document.querySelector('.email');
+  const twitter = document.querySelector('.twitter');
+  const company = document.querySelector('.company');
 
   searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -75,6 +79,10 @@
     repos.textContent = data['public_repos'];
     followers.textContent = data['followers'];
     following.textContent = data['following'];
+    city.textContent = data['location'];
+    twitter.textContent = data['twitter-username'];
+    company.textContent = data['company'];
+    email.textContent = data['email'];
     });
   })
 
