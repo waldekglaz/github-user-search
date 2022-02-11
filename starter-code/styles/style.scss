@@ -1,0 +1,47 @@
+@import "core", "abstracts/variables", "abstracts/mixins";
+
+$color: #000;
+
+.container {
+  padding: 1.9375rem 1.5rem;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+.logo {
+  font-size: 1.625rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+.theme-selector {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  color: #4b6a9b;
+  letter-spacing: 2.5px;
+}
+.theme-selector__icon {
+  margin-left: 1rem;
+}
+.result__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar__input {
+  width: 100%;
+}
+.search-bar__btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}

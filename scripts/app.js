@@ -1,10 +1,10 @@
 const gitHubUrl = 'https://api.github.com/users/';
-const inputEl = document.querySelector('#text-field');
+const inputEl = document.querySelector('.search-bar__input');
 const name = document.querySelector('.result__user-name');
 const usernameEl = document.querySelector('.result__user-username');
 const avatar = document.querySelector('.result__avatar');
 const userBio = document.querySelector('.bio');
-const searchBtn = document.querySelector('.btn');
+const searchBtn = document.querySelector('.search-bar__btn');
 const repos = document.querySelector('.repos');
 const followers = document.querySelector('.followers');
 const following = document.querySelector('.following');
@@ -13,6 +13,9 @@ const website = document.querySelector('.website');
 const twitter = document.querySelector('.twitter');
 const company = document.querySelector('.company');
 const joinedDate = document.querySelector('.result__user-join-date')
+
+
+
   searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     const username = inputEl.value
