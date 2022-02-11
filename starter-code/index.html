@@ -7,12 +7,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | GitHub user search app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="container">
     <header class="header">
       <h1 class="logo">devfinder</h1>
-      <div class="theme-selector">Dark</div>
+      <div class="theme-selector">Dark<img class="theme-selector__icon" src="assets/icon-moon.svg"></div>
+    </header class='header'>
       <form action="" class="form">
         <input type="text" name="text" id="text-field" placeholder="Search GitHub username...">
         <button class="btn" type="submit">Search</button>
@@ -46,45 +49,11 @@
           <div class="company">Random City</div>
         </div>
       </div>
-    </header>
+    
     
   </main> 
-<script>
-  const gitHubUrl = 'https://api.github.com/users/';
-  const inputEl = document.querySelector('#text-field');
-  const name = document.querySelector('.result__user-name');
-  const username = document.querySelector('.result__user-username');
-  const avatar = document.querySelector('.result__avatar');
-  const userBio = document.querySelector('.bio');
-  const searchBtn = document.querySelector('.btn');
-  const repos = document.querySelector('.repos');
-  const followers = document.querySelector('.followers');
-  const following = document.querySelector('.following');
-  const city = document.querySelector('.city');
-  const email = document.querySelector('.email');
-  const twitter = document.querySelector('.twitter');
-  const company = document.querySelector('.company');
-
-  searchBtn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    const username = inputEl.value
-    fetch(`${gitHubUrl}${username}`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    name.textContent = data['name'];
-    username.textContent = data['login'];
-    avatar.src = data['avatar_url'];
-    userBio.textContent = data['bio'];
-    repos.textContent = data['public_repos'];
-    followers.textContent = data['followers'];
-    following.textContent = data['following'];
-    city.textContent = data['location'];
-    twitter.textContent = data['twitter-username'];
-    company.textContent = data['company'];
-    email.textContent = data['email'];
-    });
-  })
+<script src="../scripts/app.js">
+  
 
   
 </script>
