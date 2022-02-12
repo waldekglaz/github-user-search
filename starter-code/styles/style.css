@@ -3,9 +3,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container {
   font-family: "Space Mono", monospace;
 }
 
@@ -53,10 +50,18 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /* This bit draws the box around it */
-  border: 1px solid grey;
-  /* I've used padding so you can see the edges of the elements. */
-  padding: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  border-radius: 1rem;
+}
+
+.search-bar__icon {
+  margin-right: 0.55rem;
+  width: 1.25rem;
+  height: auto;
 }
 
 input {
@@ -66,6 +71,24 @@ input {
           flex-grow: 2;
   /* And hide the input's outline, so the form looks like the outline */
   border: none;
+  padding: 1rem 0;
+  color: #4b6a9b;
+}
+
+input::-webkit-input-placeholder {
+  color: #4b6a9b;
+}
+
+input:-ms-input-placeholder {
+  color: #4b6a9b;
+}
+
+input::-ms-input-placeholder {
+  color: #4b6a9b;
+}
+
+input::placeholder {
+  color: #4b6a9b;
 }
 
 input:focus {
@@ -73,52 +96,21 @@ input:focus {
   outline: none;
 }
 
-button {
+.search-bar__btn {
   /* Just a little styling to make it pretty */
-  border: 1px solid blue;
-  background: blue;
-  color: white;
+  padding: 0.78125rem;
+  font-size: 0.875rem;
+  border: none;
+  background: #0079ff;
+  color: #ffffff;
+  border-radius: 1rem;
 }
 
 .container {
+  font-size: 13px;
   padding: 1.9375rem 1.5rem;
   background-color: #f2f2f2;
   height: 100vh;
-}
-
-.logo {
-  font-size: 1.625rem;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 2.25rem;
-}
-
-.theme-selector {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8125rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #4b6a9b;
-  letter-spacing: 2.5px;
-}
-
-.theme-selector__icon {
-  margin-left: 1rem;
 }
 
 .result__avatar {

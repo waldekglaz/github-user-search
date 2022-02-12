@@ -2,27 +2,6 @@
   "abstracts/mixins", "components/header", "components/form",
   "components/container";
 
-.logo {
-  font-size: 1.625rem;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2.25rem;
-}
-.theme-selector {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8125rem;
-  display: flex;
-  align-items: center;
-  color: #4b6a9b;
-  letter-spacing: 2.5px;
-}
-.theme-selector__icon {
-  margin-left: 1rem;
-}
 .result__avatar {
   width: 70px;
   height: 70px;

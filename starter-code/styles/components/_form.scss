@@ -2,19 +2,26 @@ form {
   /* This bit sets up the horizontal layout */
   display: flex;
   flex-direction: row;
-
-  /* This bit draws the box around it */
-  border: 1px solid grey;
-
-  /* I've used padding so you can see the edges of the elements. */
-  padding: 2px;
+  align-items: center;
+  background-color: $dm-clr-White;
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+  border-radius: 1rem;
 }
-
+.search-bar__icon {
+  margin-right: 0.55rem;
+  width: 1.25rem;
+  height: auto;
+}
 input {
   /* Tell the input to use all the available space */
   flex-grow: 2;
   /* And hide the input's outline, so the form looks like the outline */
   border: none;
+  padding: 1rem 0;
+  color: $lm-clr-Gray-Blue;
+}
+input::placeholder {
+  color: $lm-clr-Gray-Blue;
 }
 
 input:focus {
@@ -22,9 +29,12 @@ input:focus {
   outline: none;
 }
 
-button {
+.search-bar__btn {
   /* Just a little styling to make it pretty */
-  border: 1px solid blue;
-  background: blue;
-  color: white;
+  padding: 0.78125rem;
+  font-size: 0.875rem;
+  border: none;
+  background: $clr-Blue;
+  color: #ffffff;
+  border-radius: 1rem;
 }
