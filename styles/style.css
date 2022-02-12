@@ -57,6 +57,8 @@ form {
   padding: 0.25rem 0.5rem 0.25rem 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  -webkit-box-shadow: -6px 21px 20px -20px rgba(43, 52, 66, 0.35);
+          box-shadow: -6px 21px 20px -20px rgba(43, 52, 66, 0.35);
 }
 
 .search-bar__icon {
@@ -119,6 +121,8 @@ input:focus {
   background-color: #fff;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
+  -webkit-box-shadow: -6px 21px 20px -20px rgba(43, 52, 66, 0.35);
+          box-shadow: -6px 21px 20px -20px rgba(43, 52, 66, 0.35);
 }
 
 .result__header {
@@ -192,15 +196,5 @@ input:focus {
 .details__box span {
   margin-left: 0.8125rem;
   color: #4b6a9b;
-}
-
-.result__avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-.result__user-name {
-  color: #2b3442;
 }
 /*# sourceMappingURL=style.css.map */
