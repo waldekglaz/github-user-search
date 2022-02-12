@@ -9,18 +9,24 @@ form {
   margin-bottom: 1rem;
   box-shadow: -6px 21px 20px -20px rgba(43, 52, 66, 0.35);
 }
+.search-bar.dark {
+  background-color: $dm-clr-dark-Blue;
+}
 .search-bar__icon {
   margin-right: 0.55rem;
   width: 1.25rem;
   height: auto;
 }
-input {
+.search-bar__input {
   /* Tell the input to use all the available space */
   flex-grow: 2;
   /* And hide the input's outline, so the form looks like the outline */
   border: none;
   padding: 1rem 0;
   color: $lm-clr-Gray-Blue;
+}
+.search-bar__input.dark {
+  background-color: $dm-clr-dark-Blue;
 }
 input::placeholder {
   color: $lm-clr-Gray-Blue;
