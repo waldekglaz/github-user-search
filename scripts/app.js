@@ -40,6 +40,7 @@ fetch(`${gitHubUrl}${username}`)
   }
 
   function getData(data){
+    console.log(data)
     nameEl.textContent = data['name'];
     usernameEl.textContent = `@${data['login']}`;
     avatar.src = data['avatar_url'];
@@ -47,10 +48,27 @@ fetch(`${gitHubUrl}${username}`)
     repos.textContent = data['public_repos'];
     followers.textContent = data['followers'];
     following.textContent = data['following'];
-    city.textContent = data['location'];
-    twitter.textContent = data['twitter-username'];
-    company.textContent = data['company'];
-    website.textContent = data['blog'];
+    
+    if(data['twitter-username'] != null){
+      twitter.textContent = data['twitter-username']
+    }else{
+      twitter.textContent = 'Not Available';
+    }
+    if(data['company'] != null){
+      company.textContent = data['company']
+    }else{
+      company.textContent = 'Not Available';
+    }
+    if(data['blog'] != null){
+      website.textContent = data['blog']
+    }else{
+      website.textContent = 'Not Available';
+    }
+    if(data['location'] != null){
+      city.textContent = data['location']
+    }else{
+      city.textContent = 'Not Available';
+    }
     joinedDate.textContent = data['created_at'].split('T')[[0]];
     clearInput()
   }

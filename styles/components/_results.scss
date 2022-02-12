@@ -26,6 +26,11 @@
 .result__user-join-date {
   color: $lm-clr-Gray;
 }
+.bio {
+  margin-bottom: 1.4375rem;
+  line-height: 25px;
+  color: $lm-clr-Gray-Blue;
+}
 .user-stats {
   display: flex;
   justify-content: space-between;

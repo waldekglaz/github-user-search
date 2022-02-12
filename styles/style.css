@@ -157,6 +157,12 @@ input:focus {
   color: #697c9a;
 }
 
+.bio {
+  margin-bottom: 1.4375rem;
+  line-height: 25px;
+  color: #4b6a9b;
+}
+
 .user-stats {
   display: -webkit-box;
   display: -ms-flexbox;
