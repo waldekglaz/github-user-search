@@ -95,6 +95,7 @@ input::placeholder {
 input:focus {
   /* removing the input focus blue box. Put this on the form if you like. */
   outline: none;
+  background-color: #ffffff;
 }
 
 .search-bar__btn {
