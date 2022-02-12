@@ -1,0 +1,27 @@
+.result {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+.result__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.0625rem;
+}
+.result-wrapper {
+  margin-left: 1.1875rem;
+}
+.result__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.result__user-name {
+  color: $lm-clr-Black;
+}
+.result__user-username {
+  color: $clr-Blue;
+}
+.result__user-join-date {
+  color: $lm-clr-Gray;
+}

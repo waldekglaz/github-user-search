@@ -1,9 +1,12 @@
 @import "abstracts/variables", "core/reset", "core/typography",
   "abstracts/mixins", "components/header", "components/form",
-  "components/container";
+  "components/container", "components/results";
 
 .result__avatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+.result__user-name {
+  color: $lm-clr-Black;
 }

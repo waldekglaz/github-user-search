@@ -43,7 +43,7 @@ const username = 'octocat'
   .then(data => {
     console.log(data)
     name.textContent = data['name'];
-    usernameEl.textContent = data['login'];
+    usernameEl.textContent = `@${data['login']}`;
     avatar.src = data['avatar_url'];
     userBio.textContent = data['bio'];
     repos.textContent = data['public_repos'];
