@@ -6,6 +6,14 @@
 }
 .result.dark {
   background-color: $dm-clr-dark-Blue;
+  .result__user-name,
+  .result__user-join-date,
+  .user-stats,
+  .stats__title,
+  .bio,
+  .details__box span {
+    color: $dm-clr-White;
+  }
 }
 .result__header {
   display: flex;
@@ -64,4 +72,8 @@
     margin-left: 0.8125rem;
     color: $lm-clr-Gray-Blue;
   }
+}
+.detail__icon.dark {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(80deg)
+    brightness(103%) contrast(101%);
 }

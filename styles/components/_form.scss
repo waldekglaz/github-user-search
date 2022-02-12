@@ -11,6 +11,9 @@ form {
 }
 .search-bar.dark {
   background-color: $dm-clr-dark-Blue;
+  input::placeholder {
+    color: $dm-clr-White;
+  }
 }
 .search-bar__icon {
   margin-right: 0.55rem;
