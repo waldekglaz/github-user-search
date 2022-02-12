@@ -152,6 +152,47 @@ input:focus {
   color: #697c9a;
 }
 
+.user-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #f6f8ff;
+  padding: 1.125rem 2.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats__title {
+  font-size: 11px;
+  font-weight: normal;
+  color: #4b6a9b;
+  margin-bottom: 0.5rem;
+}
+
+.number {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.details__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.details__box span {
+  margin-left: 0.8125rem;
+  color: #4b6a9b;
+}
+
 .result__avatar {
   width: 70px;
   height: 70px;
