@@ -40,7 +40,7 @@ fetch(`${gitHubUrl}${username}`)
   }
 
   function getData(data){
-    console.log(data)
+    // console.log(data)
     nameEl.textContent = data['name'];
     usernameEl.textContent = `@${data['login']}`;
     avatar.src = data['avatar_url'];
@@ -69,6 +69,10 @@ fetch(`${gitHubUrl}${username}`)
     }else{
       city.textContent = 'Not Available';
     }
-    joinedDate.textContent = data['created_at'].split('T')[[0]];
+    let joinedDateRaw = data['created_at'].split('T')[[0]];
+    e = new Date(joinedDateRaw).toString()
+    new_arr = e.split(' ')
+    console.log(new_arr)
+    joinedDate.textContent = `Joined ${new_arr[2]} ${new_arr[1]} ${new_arr[3]}`;
     clearInput()
   }
