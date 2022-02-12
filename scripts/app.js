@@ -72,7 +72,6 @@ fetch(`${gitHubUrl}${username}`)
     let joinedDateRaw = data['created_at'].split('T')[[0]];
     e = new Date(joinedDateRaw).toString()
     new_arr = e.split(' ')
-    console.log(new_arr)
     joinedDate.textContent = `Joined ${new_arr[2]} ${new_arr[1]} ${new_arr[3]}`;
     clearInput()
   }

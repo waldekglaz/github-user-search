@@ -23,6 +23,10 @@
   font-size: 1.625rem;
 }
 
+.logo.dark {
+  color: #ffffff;
+}
+
 .theme-selector {
   text-transform: uppercase;
   font-weight: bold;
@@ -41,6 +45,14 @@
 
 .theme-selector__icon {
   margin-left: 1rem;
+}
+
+.theme-selector__text.dark {
+  color: #ffffff;
+}
+
+.theme-selector.dark {
+  background-color: #141d2f;
 }
 
 form {
@@ -119,7 +131,7 @@ input:focus {
 }
 
 .container.dark {
-  background-color: #1e2a47;
+  background-color: #141d2f;
 }
 
 .result {

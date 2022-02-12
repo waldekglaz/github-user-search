@@ -7,6 +7,9 @@
 .logo {
   font-size: 1.625rem;
 }
+.logo.dark {
+  color: $dm-clr-White;
+}
 .theme-selector {
   text-transform: uppercase;
   font-weight: bold;
@@ -20,4 +23,11 @@
 }
 .theme-selector__icon {
   margin-left: 1rem;
+}
+.theme-selector__text.dark {
+  color: $dm-clr-White;
+}
+
+.theme-selector.dark {
+  background-color: $dm-clr-Black;
 }
