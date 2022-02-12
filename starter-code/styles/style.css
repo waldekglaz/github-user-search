@@ -5,8 +5,79 @@
           box-sizing: border-box;
 }
 
-body {
+.container {
   font-family: "Space Mono", monospace;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+
+.logo {
+  font-size: 1.625rem;
+}
+
+.theme-selector {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4b6a9b;
+  letter-spacing: 2.5px;
+}
+
+.theme-selector__icon {
+  margin-left: 1rem;
+}
+
+form {
+  /* This bit sets up the horizontal layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* This bit draws the box around it */
+  border: 1px solid grey;
+  /* I've used padding so you can see the edges of the elements. */
+  padding: 2px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border: none;
+}
+
+input:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+}
+
+button {
+  /* Just a little styling to make it pretty */
+  border: 1px solid blue;
+  background: blue;
+  color: white;
 }
 
 .container {
@@ -54,21 +125,5 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-}
-
-.search-bar {
-  position: relative;
-}
-
-.search-bar__input {
-  width: 100%;
-}
-
-.search-bar__btn {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */

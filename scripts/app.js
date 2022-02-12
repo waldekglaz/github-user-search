@@ -16,10 +16,29 @@ const joinedDate = document.querySelector('.result__user-join-date')
 
 
 
-  searchBtn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    const username = inputEl.value
-    fetch(`${gitHubUrl}${username}`)
+  // searchBtn.addEventListener('click', (e)=>{
+  //   e.preventDefault();
+  //   const username = inputEl.value
+  //   fetch(`${gitHubUrl}${username}`)
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data)
+  //   name.textContent = data['name'];
+  //   usernameEl.textContent = data['login'];
+  //   avatar.src = data['avatar_url'];
+  //   userBio.textContent = data['bio'];
+  //   repos.textContent = data['public_repos'];
+  //   followers.textContent = data['followers'];
+  //   following.textContent = data['following'];
+  //   city.textContent = data['location'];
+  //   twitter.textContent = data['twitter-username'];
+  //   company.textContent = data['company'];
+  //   website.textContent = data['blog'];
+  //   joinedDate.textContent = data['created_at'].split('T')[[0]]
+  //   });
+  // })
+const username = 'octocat'
+  fetch(`${gitHubUrl}${username}`)
   .then(response => response.json())
   .then(data => {
     console.log(data)
@@ -36,4 +55,3 @@ const joinedDate = document.querySelector('.result__user-join-date')
     website.textContent = data['blog'];
     joinedDate.textContent = data['created_at'].split('T')[[0]]
     });
-  })

@@ -1,15 +1,11 @@
-@import "abstracts/variables", "core/reset", "core/typography",
-  "abstracts/mixins", "components/header", "components/form",
-  "components/container";
-
-.logo {
-  font-size: 1.625rem;
-}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.25rem;
+}
+.logo {
+  font-size: 1.625rem;
 }
 .theme-selector {
   text-transform: uppercase;
@@ -22,9 +18,4 @@
 }
 .theme-selector__icon {
   margin-left: 1rem;
-}
-.result__avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
 }
