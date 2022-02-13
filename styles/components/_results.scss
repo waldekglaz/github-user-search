@@ -86,3 +86,17 @@
     flex-basis: 50%;
   }
 }
+@media (min-width: 768px) {
+  .bio {
+    font-size: 15px;
+  }
+  .user-stats {
+    text-align: left;
+  }
+  .stats__title {
+    font-size: 13px;
+  }
+  .number {
+    font-size: 22px;
+  }
+}

@@ -7,3 +7,9 @@
 .container.dark {
   background-color: $dm-clr-Black;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 8.75rem 12.6%;
+    font-size: 18px;
+  }
+}

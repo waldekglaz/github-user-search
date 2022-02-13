@@ -49,3 +49,9 @@ input:focus {
   color: #ffffff;
   border-radius: 1rem;
 }
+@media (min-width: 768px) {
+  .search-bar__input,
+  input::placeholder {
+    font-size: 18px;
+  }
+}
