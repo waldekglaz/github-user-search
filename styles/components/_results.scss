@@ -108,14 +108,33 @@
   }
 }
 @media (min-width: 1024px) {
+  .result-wrapper {
+    margin-left: 2.3125rem;
+  }
+  .result__user-join-date {
+    font-size: 0.9375rem;
+  }
   .result__user-name {
     font-size: 1.625rem;
     font-weight: bold;
   }
+
   .result__user-username {
     font-size: 1rem;
   }
-  .result__user-join-date {
-    font-size: 0.9375rem;
+  .bio {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .user-stats {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .details {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
   }
 }

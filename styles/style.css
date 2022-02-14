@@ -157,6 +157,11 @@ input::placeholder {
 input:focus {
   /* removing the input focus blue box. Put this on the form if you like. */
   outline: none;
+  background-color: #ffffff;
+}
+
+input:active {
+  background-color: #ffffff;
 }
 
 .error {
@@ -352,6 +357,12 @@ input:focus {
 }
 
 @media (min-width: 1024px) {
+  .result-wrapper {
+    margin-left: 2.3125rem;
+  }
+  .result__user-join-date {
+    font-size: 0.9375rem;
+  }
   .result__user-name {
     font-size: 1.625rem;
     font-weight: bold;
@@ -359,8 +370,20 @@ input:focus {
   .result__user-username {
     font-size: 1rem;
   }
-  .result__user-join-date {
-    font-size: 0.9375rem;
+  .bio {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .user-stats {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .details {
+    width: 78%;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
