@@ -18,7 +18,8 @@ const joinedDate = document.querySelector('.result__user-join-date')
 
 searchBtn.addEventListener('click', (e)=>{
 e.preventDefault();
-let username = inputEl.value
+let username = inputEl.value;
+
 fetch(`${gitHubUrl}${username}`)
 .then(response => response.json())
 .then(data => {
@@ -26,6 +27,7 @@ console.log(data)
 getData(data)
 });
 })
+
 
 let username = 'octocat'
 
@@ -40,11 +42,16 @@ fetch(`${gitHubUrl}${username}`)
   }
 
   function getData(data){
-    // console.log(data)
+    console.log(data);
     nameEl.textContent = data['name'];
     usernameEl.textContent = `@${data['login']}`;
     avatar.src = data['avatar_url'];
-    userBio.textContent = data['bio'];
+    if(data['bio'] === null){
+      userBio.textContent = 'This profile has no bio'
+    }else{
+      userBio.textContent = data['bio'];
+    }
+    
     repos.textContent = data['public_repos'];
     followers.textContent = data['followers'];
     following.textContent = data['following'];
