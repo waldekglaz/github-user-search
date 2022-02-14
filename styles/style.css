@@ -6,6 +6,28 @@
   font-family: "Space Mono", monospace;
 }
 
+.body {
+  font-size: 13px;
+  padding: 1.9375rem 6.4%;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.body.dark {
+  background-color: #141d2f;
+}
+
+@media (min-width: 768px) {
+  .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,20 +188,10 @@ input:focus {
   }
 }
 
-.container {
-  font-size: 13px;
-  padding: 1.9375rem 6.4%;
-  background-color: #f2f2f2;
-  min-height: 100vh;
-}
-
-.container.dark {
-  background-color: #141d2f;
-}
-
 @media (min-width: 768px) {
   .container {
-    padding: 8.75rem 12.6%;
+    max-width: 730px;
+    margin: 0 auto;
     font-size: 18px;
   }
 }
@@ -308,6 +320,13 @@ input:focus {
 }
 
 @media (min-width: 768px) {
+  .result {
+    padding: 3rem;
+  }
+  .result__avatar {
+    width: 117px;
+    height: auto;
+  }
   .bio {
     font-size: 15px;
   }

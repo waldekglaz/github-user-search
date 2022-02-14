@@ -1,0 +1,15 @@
+.body {
+  font-size: 13px;
+  padding: 1.9375rem 6.4%;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+.body.dark {
+  background-color: $dm-clr-Black;
+}
+@media (min-width: 768px) {
+  .body {
+    display: flex;
+    align-items: center;
+  }
+}

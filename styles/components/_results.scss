@@ -87,6 +87,13 @@
   }
 }
 @media (min-width: 768px) {
+  .result {
+    padding: 3rem;
+  }
+  .result__avatar {
+    width: 117px;
+    height: auto;
+  }
   .bio {
     font-size: 15px;
   }

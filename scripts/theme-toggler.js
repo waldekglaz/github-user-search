@@ -1,5 +1,5 @@
 const toggleBtn = document.querySelector('.theme-selector');
-const container = document.querySelector('.container');
+const body = document.querySelector('.body');
 const logo = document.querySelector('.logo');
 const togglerIcon = document.querySelector('.theme-selector__icon');
 const togglerText = document.querySelector('.theme-selector__text');
@@ -9,7 +9,7 @@ const result = document.querySelector('.result');
 const stats = document.querySelector('.user-stats');
 const detailIcons = document.getElementsByClassName('detail__icon')
 toggleBtn.addEventListener('click', ()=>{
-    container.classList.toggle('dark');
+    body.classList.toggle('dark');
     logo.classList.toggle('dark');
     toggleBtn.classList.toggle('dark');
     searchBar.classList.toggle('dark');
