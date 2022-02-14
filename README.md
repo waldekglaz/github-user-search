@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/waldekglaz/github-user-search](https://your-solution-url.com)
-- Live Site URL: [waldekglaz.github.io/github-user-search/](waldekglaz.github.io/github-user-search/)
+- Solution URL: [code](https://github.com/waldekglaz/github-user-search)
+- Live Site URL: [live](waldekglaz.github.io/github-user-search/)
 
 ## My process
 
