@@ -359,6 +359,18 @@ input:active {
 @media (min-width: 1024px) {
   .result-wrapper {
     margin-left: 2.3125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 117px;
   }
   .result__user-join-date {
     font-size: 0.9375rem;
@@ -366,22 +378,27 @@ input:active {
   .result__user-name {
     font-size: 1.625rem;
     font-weight: bold;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .result__user-username {
     font-size: 1rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .bio {
-    width: 78%;
+    width: 76%;
     margin-left: auto;
     margin-right: 0;
   }
   .user-stats {
-    width: 78%;
+    width: 76%;
     margin-left: auto;
     margin-right: 0;
   }
   .details {
-    width: 78%;
+    width: 76%;
     margin-left: auto;
     margin-right: 0;
   }
