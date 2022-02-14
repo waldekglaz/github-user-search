@@ -340,4 +340,17 @@ input:focus {
     font-size: 22px;
   }
 }
+
+@media (min-width: 1024px) {
+  .result__user-name {
+    font-size: 1.625rem;
+    font-weight: bold;
+  }
+  .result__user-username {
+    font-size: 1rem;
+  }
+  .result__user-join-date {
+    font-size: 0.9375rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
