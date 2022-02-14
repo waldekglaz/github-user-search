@@ -12,21 +12,32 @@ const city = document.querySelector('.city');
 const website = document.querySelector('.website');
 const twitter = document.querySelector('.twitter');
 const company = document.querySelector('.company');
-const joinedDate = document.querySelector('.result__user-join-date')
+const joinedDate = document.querySelector('.result__user-join-date');
+const errorMsg = document.querySelector('.error')
 
 
 
 searchBtn.addEventListener('click', (e)=>{
+  errorMsg.classList.remove('active')
 e.preventDefault();
 let username = inputEl.value;
 
 fetch(`${gitHubUrl}${username}`)
-.then(response => response.json())
-.then(data => {
-console.log(data)
-getData(data)
+ .then(resp =>{
+   if(!resp.ok){
+     throw Error(resp.statusText)
+   }
+   return resp.json()
+ })
+ .then(data =>{
+   getData(data)
+ })
+ .catch(err => {
+   console.log('Not available');
+   errorMsg.classList.add('active')
+   console.log(err)
+ })
 });
-})
 
 
 let username = 'octocat'
@@ -37,9 +48,9 @@ fetch(`${gitHubUrl}${username}`)
   getData(data)
   });
 
-  function clearInput(){
-    inputEl.value = ''
-  }
+function clearInput(){
+  inputEl.value = ''
+}
 
   function getData(data){
     console.log(data);

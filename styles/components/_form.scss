@@ -39,7 +39,14 @@ input:focus {
   /* removing the input focus blue box. Put this on the form if you like. */
   outline: none;
 }
-
+.error {
+  color: #f74646;
+  margin-right: 1rem;
+  display: none;
+}
+.error.active {
+  display: block;
+}
 .search-bar__btn {
   /* Just a little styling to make it pretty */
   padding: 0.78125rem;
