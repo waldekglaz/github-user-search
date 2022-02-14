@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [code](https://github.com/waldekglaz/github-user-search)
-- Live Site URL: [live](waldekglaz.github.io/github-user-search/)
+- Live Site URL: [live](https://waldekglaz.github.io/github-user-search/)
 
 ## My process
 
