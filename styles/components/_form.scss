@@ -1,5 +1,4 @@
-form {
-  /* This bit sets up the horizontal layout */
+.search-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,6 +13,9 @@ form {
   input::placeholder {
     color: $dm-clr-White;
   }
+  .search-bar__input.dark {
+    background-color: $dm-clr-dark-Blue;
+  }
 }
 .search-bar__icon {
   margin-right: 0.55rem;
@@ -21,16 +23,12 @@ form {
   height: auto;
 }
 .search-bar__input {
-  /* Tell the input to use all the available space */
   flex-grow: 2;
-  /* And hide the input's outline, so the form looks like the outline */
   border: none;
   padding: 1rem 0;
   color: $lm-clr-Gray-Blue;
 }
-.search-bar__input.dark {
-  background-color: $dm-clr-dark-Blue;
-}
+
 input::placeholder {
   color: $lm-clr-Gray-Blue;
 }
@@ -63,6 +61,6 @@ input:active {
 @media (min-width: 768px) {
   .search-bar__input,
   input::placeholder {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

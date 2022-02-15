@@ -39,7 +39,7 @@ fetch(`${gitHubUrl}${username}`)
  })
 });
 
-
+// Display default octocat account on start
 let username = 'octocat'
 
 fetch(`${gitHubUrl}${username}`)
